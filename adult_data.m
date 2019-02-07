@@ -273,7 +273,8 @@ end
 data(:,[15]) = Data_15;
 
 output_matrix_unfixed = cell2mat(data);
-output_matrix = normc(output_matrix_unfixed(:,[1:14]));
+output_matrix1 = normc(output_matrix_unfixed(:,[1:14]));
+output_matrix = [output_matrix1 output_matrix_unfixed(:,[15])];
 end
 
 
